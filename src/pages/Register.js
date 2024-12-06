@@ -7,7 +7,7 @@ import '../../src/css/register.css';
 async function SubmitRegisterForm(RegisterData) {
     try{
         const API_URL = process.env.REACT_APP_API_URL || 'https://magicplate-admin.vercel.app'
-        const response = await fetch(`${API_URL}/signup`,{
+        const response = await fetch(`${API_URL}/newRegister`,{
             method:'POST',
             headers: {
                 'Content-type': 'application/json',

@@ -50,7 +50,7 @@ const newRegisterSchema = new mongoose.Schema({
 
 const newRegister = mongoose.model('newRegister', newRegisterSchema)
 
-app.post('/signup', async (req, res) => {
+app.post('/newRegister', async (req, res) => {
     try {
         const newregister = new newRegister(req.body)
         await newregister.save()
@@ -67,7 +67,7 @@ app.post('/signup', async (req, res) => {
     }
 })
 
-app.post('/login', async (req, res) => {
+app.post('/admin-login', async (req, res) => {
     const {username,password} = req.body
     try {
         const user = await newRegister.findOne({username})
