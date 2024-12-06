@@ -25,11 +25,7 @@ app.use(bodyparser.json())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(express.static(path.join(__dirname, '..', 'build')))
-app.use(cors({
-    origin: 'https://magicplate-admin.vercel.app',
-    methods: ['GET', 'POST'],
-    allowedHeaders: ['Content-Type']
-}));
+app.use(cors())
 app.use('/uploads',express.static(path.join(__dirname,'uploads')))
 mongoose.connect(`${mongodbPassword}/MagicPlate-Admin`, {
     useNewUrlParser: true,
