@@ -25,7 +25,11 @@ app.use(bodyparser.json())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(express.static(path.join(__dirname, '..', 'build')))
-app.use(cors())
+app.use(cors({
+    origin: 'https://magicplate-admin.vercel.app',
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type']
+}));
 app.use('/uploads',express.static(path.join(__dirname,'uploads')))
 mongoose.connect(`${mongodbPassword}/MagicPlate-Admin`, {
     useNewUrlParser: true,
@@ -50,7 +54,7 @@ const newRegisterSchema = new mongoose.Schema({
 
 const newRegister = mongoose.model('newRegister', newRegisterSchema)
 
-app.post('/newRegister', async (req, res) => {
+app.post('/signup', async (req, res) => {
     try {
         const newregister = new newRegister(req.body)
         await newregister.save()
@@ -67,7 +71,7 @@ app.post('/newRegister', async (req, res) => {
     }
 })
 
-app.post('/admin-login', async (req, res) => {
+app.post('/login', async (req, res) => {
     const {username,password} = req.body
     try {
         const user = await newRegister.findOne({username})
