@@ -1,0 +1,389 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: rgb(241, 241, 243);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#Nav-Content-Bar {
+    height: 12vh;
+    width: 100vw;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#Navbar {
+    height: 12vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+#header-company {
+    padding: 10px;
+    position: relative;
+    left: 2%;
+}
+
+#company {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+
+#Login-button {
+    padding: 10px;
+    position: relative;
+    right: 2%;
+    display: flex;
+    align-items: center;
+}
+
+#Login {
+    padding: 5px;
+    width: 100px;
+    height: 35px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+#Home {
+    padding: 5px;
+    width: 100px;
+    height: 35px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-left: 10px;
+}
+.link-home{
+    text-decoration: none;
+}
+.link-login{
+    text-decoration: none;
+}
+
+#Main-Body-Content {
+    width: 100vw;
+    height: 88vh;
+    position: relative;
+    top: 10px;
+}
+
+#Header-dashboard {
+    height: 35vh;
+    width: 100vw;
+    position: relative;
+    top: 18%;
+}
+
+#header-1 {
+    height: 17vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    font-size: 23px;
+}
+
+#Welcome-header-1 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.89);
+}
+
+#header-2 {
+    height: 0vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+}
+
+#Welcome-header-2 {
+    font-family: "Poppins", sans-serif;
+
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.89);
+}
+
+#slogan-dashboard {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 44%;
+}
+
+#slogans {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.59);
+    font-size: 23px;
+    
+}
+
+#dashboard-button{
+    height: 12vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 23%;
+}
+
+#enter-dashboard{
+    height: 8vh;
+    width: 16vw;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.79);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#cards {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+#Orders{
+    height: 22%;
+    width: 90%;
+    
+    border-radius: 9px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 2%;
+    left: 4%;
+}
+#orders-headers{
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    top: 10%;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+
+}
+#cart{
+    height: 25px;
+    width: 25px;
+    position: relative;
+    left: 4%;
+}
+#orders-management{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    position: relative;
+    left: 5%;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.87);
+}
+#orders-slogan{
+    height: 65%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    border-radius: 9px;
+}
+#orders-para{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    position: relative;
+    left: 4.3%;
+}
+
+#Sales{
+    height: 22%;
+    width: 90%;
+    
+    border-radius: 9px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 11%;
+    left: 4%;
+}
+
+#sales-headers{
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    top: 10%;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+
+}
+
+#graph{
+    height: 25px;
+    width: 25px;
+    position: relative;
+    left: 4%;
+}
+
+#sales-management{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    position: relative;
+    left: 5%;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+#sales-slogan{
+    height: 65%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    border-radius: 9px;
+}
+#sales-para{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    position: relative;
+    left: 4.3%;
+}
+
+#Inventory{
+    height: 22%;
+    width: 90%;
+    
+    border-radius: 9px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 18%;
+    left: 4%;
+}
+
+#inventory-headers{
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    top: 10%;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+
+}
+
+#analytics{
+    height: 25px;
+    width: 25px;
+    position: relative;
+    left: 4%;
+}
+
+#inventory-management{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    position: relative;
+    left: 5%;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+#inventory-slogan{
+    height: 65%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    border-radius: 9px;
+}
+#inventory-para{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    position: relative;
+    left: 4.3%;
+}
+#Register{
+    height: 25vh;
+    width: 100vw;
+}
+#register-slogan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    position: relative;
+    top: 0%;
+}
+#button-register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 4%;
+}
+#register-button{
+    height: 8vh;
+    width: 16vw;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.79);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    cursor: pointer;
+}
+#All-Rights{
+    background-color: white;
+    height: 12vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#All-Rights-Slogan{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.79);
+}

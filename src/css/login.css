@@ -1,0 +1,209 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: rgb(241, 241, 243);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#Nav-Content-Bar {
+    height: 12vh;
+    width: 100vw;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#Navbar {
+    height: 12vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+#header-company {
+    padding: 10px;
+    position: relative;
+    left: 2%;
+}
+
+#company {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+
+#Login-button {
+    padding: 10px;
+    position: relative;
+    right: 2%;
+}
+
+#Login {
+    padding: 5px;
+    width: 100px;
+    height: 35px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+#Home {
+    padding: 5px;
+    width: 100px;
+    height: 35px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-left: 10px;
+}
+.link-home{
+    text-decoration: none;
+}
+.link-register{
+    text-decoration: none;
+}
+#Login-Body{
+    width: 100vw;
+    height: 88vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Login-Form{
+    height: 60vh;
+    width: 40vw;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+#form-header-1{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 5%;
+}
+#header-login{
+    font-family: "Poppins", sans-serif;
+    font-style: bold;
+    font-size: 24px;
+}
+#username-box-1{
+    width: 100%;
+    height: 20%;
+    position: relative;
+    top: 10%;
+}
+#username-login{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    position: relative;
+    left: 6.5%;
+    bottom: 4%;
+    color: rgba(0, 0, 0, 0.75);
+}
+#input-box-username{
+    position: relative;
+    left: 5.7%;
+    top: 5%;
+}
+#username{
+    height: 35px;
+    width: 75%;
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+#username::placeholder{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+#username:focus{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    outline: none;
+}
+#password-box-1{
+    width: 100%;
+    height: 20%;
+    position: relative;
+    top: 13%;
+}
+#password-login{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    position: relative;
+    left: 6.5%;
+    bottom: 4%;
+    color: rgba(0, 0, 0, 0.75);
+}
+#input-box-password{
+    position: relative;
+    left: 5.7%;
+    top: 5%;
+}
+#password{
+    height: 35px;
+    width: 75%;
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+#password:focus{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    outline: none;
+}
+#password::placeholder{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+#logins-button{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    width: 100%;
+    height: 15%;
+    top: 15%;
+}
+#logins{
+    width: 82%;
+    height: 65%;
+    border-radius: 7px;
+    border: 1px solid transparent;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    position: relative;
+    left: 5.3%;
+    background: rgba(0, 0, 0, 0.79);
+    color: white;
+    cursor: pointer;
+}
