@@ -1,6 +1,6 @@
 export async function submitCakeProduct(CakeProductInfo) {
     try {
-      const API_URL = process.env.REACT_APP_API_URL || 'http://192.168.1.8:3000/api/cakes'
+      const API_URL = process.env.REACT_APP_API_URL || 'https://magicplate-admin.vercel.app/api/cakes'
       const formData = new FormData()
       formData.append('name', CakeProductInfo.name)
       formData.append('weight', CakeProductInfo.weight)
@@ -28,7 +28,7 @@ export async function submitCakeProduct(CakeProductInfo) {
   
   export async function submitMacronsProduct(MacronsProductInfo) {
     try {
-      const API_URL = process.env.REACT_APP_API_URL || 'http://192.168.1.8:3000/api/macrons'
+      const API_URL = process.env.REACT_APP_API_URL || 'https://magicplate-admin.vercel.app/api/macrons'
       const formData = new FormData()
       formData.append('name', MacronsProductInfo.name)
       formData.append('packs', MacronsProductInfo.packs)
@@ -56,7 +56,7 @@ export async function submitCakeProduct(CakeProductInfo) {
 
   export async function submitCookiesProduct(CookiesProductInfo) {
     try {
-      const API_URL = process.env.REACT_APP_API_URL || 'http://192.168.1.8:3000/api/cookies'
+      const API_URL = process.env.REACT_APP_API_URL || 'https://magicplate-admin.vercel.app/api/cookies'
       const formData = new FormData()
       formData.append('name', CookiesProductInfo.name)
       formData.append('packs', CookiesProductInfo.packs)
@@ -84,7 +84,7 @@ export async function submitCakeProduct(CakeProductInfo) {
   
   export async function submitDonutsProduct(DonutsProductInfo) {
     try {
-      const API_URL = process.env.REACT_APP_API_URL || 'http://192.168.1.8:3000/api/donuts';
+      const API_URL = process.env.REACT_APP_API_URL || 'https://magicplate-admin.vercel.app/api/donuts';
       const formData = new FormData();
       formData.append('name', DonutsProductInfo.name);
       formData.append('packs', DonutsProductInfo.packs);
@@ -116,7 +116,7 @@ export async function submitCakeProduct(CakeProductInfo) {
 
   export async function submitPastriesProduct(PastriesProductInfo) {
     try {
-      const API_URL = process.env.REACT_APP_API_URL || 'http://192.168.1.8:3000/api/pastries'
+      const API_URL = process.env.REACT_APP_API_URL || 'https://magicplate-admin.vercel.app/api/pastries'
       const formData = new FormData()
       formData.append('name', PastriesProductInfo.name)
       formData.append('description', PastriesProductInfo.description)

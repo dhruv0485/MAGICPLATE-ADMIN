@@ -72,7 +72,7 @@ function Product() {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const response = await fetch('http://192.168.1.8:3000/api/products');
+        const response = await fetch('https://magicplate-admin.vercel.app/api/products');
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
