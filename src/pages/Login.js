@@ -6,7 +6,7 @@ import '../../src/css/login.css';
 async function SubmitLogIn(LogInData) {
     try {
         const API_URL = process.env.REACT_APP_API_URL || 'https://magicplate-admin.vercel.app'
-        const response = await fetch(`${API_URL}/admin-login`,{
+        const response = await fetch(`${API_URL}/login`,{
             method:'POST',
             headers: {
                 'Content-type':'application/json',
